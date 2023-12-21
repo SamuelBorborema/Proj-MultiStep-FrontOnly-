@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proj1</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+</head>
+<body>
+  <main>
+    <img class="img-main" src="assets/images/bg-sidebar-mobile.svg" alt="">
+    <section class="container-pai">
+      <div class="imagem">
+        <H1 class="active" id="h1-toggle">1</H1>
+        <h2>Step 1</h2>
+        <p>YOUR INFO</p>
+        <H1 id="h1-toggle">2</H1>
+        <h2>Step 2</h2>
+        <p>SELECT PLAN</p>
+        <H1 id="h1-toggle">3</H1>
+        <h2>Step 3</h2>
+        <p>ADD-ONS</p>
+        <H1 id="h1-toggle">4</H1>
+        <h2>Step 4</h2>
+        <p>SUMMARY</p>
+      </div>
+
+      <div class="step1">
+        <h1>Personal Info</h1>
+        <p>Please provide your name,email address and phone number.</p>
+        <form action="" id="FormStep1">
+          <h2>Name</h2>
+          <input type="text" id="Nome" placeholder="e.g Stephen King" required>
+          <h2>Email Address</h2>
+          <input type="email" id="Email" placeholder="e.g stephenking@lorem.com" required>
+          <h2>Phone Number</h2>
+          <input type="number" id="NumberCadastro" placeholder="e.g +1 234 567 890" required>
+          <input type="submit" id="NextForm" value="Next" class="Next">
+        </form>
+      </div>
+
+      <div class="step2">
+
+        <h1>Select your plan</h1>
+        <p>You have the option of monthly or yearly billing.</p>
+        <div class="box-planos">
+
+          <div class="planos">
+            <img src="assets/images/icon-arcade.svg" alt="">
+            <p>Arcade</p>
+            <p id="arc-val">$9/mo</p>
+            <p id="monthFree">2 months free</p>
+          </div>
+  
+          <div class="planos">
+            <img src="assets/images/icon-advanced.svg" alt="">
+            <p>Advanced</p>
+            <p id="ad-val">$12/mo</p>
+            <p id="monthFree">2 months free</p>
+          </div>
+  
+          <div class="planos">
+            <img src="assets/images/icon-pro.svg" alt="">
+            <p>Pro</p>
+            <p id="pro-val">$15/mo</p>
+            <p id="monthFree">2 months free</p>
+          </div>
+        </div>
+        
+
+        <div class="mo-y">
+          <h2 class="h2-active">Monthly</h2>
+          <input type="checkbox" id="check">
+          <label for="check">
+          </label>
+          <h2>Yearly</h2>
+        </div>
+      </div>
+
+      <div class="step3">
+
+        <h1>Pick add-ons</h1>
+        <p>Add-ons help enchance your gaming experience</p>
+
+        <div class="box-addons">
+          
+          <div class="addons" id="">
+            <label for="check"></label>
+            <input id="add-ac" type="checkbox">
+            <h2>Online service</h2>
+            <p>Acess to multipler games</p>
+            <h3 id="steph31">+1/mo</h3>
+          </div>
+          
+          <div class="addons" id="addon-2">
+            <label for="check"></label>
+            <input id="add-ac" type="checkbox">
+            <h2>Larger storage</h2>
+            <p>Extra 1TB of cloud save</p>
+            <h3 id="steph32">+2/mo</h3>
+          </div>
+          
+          <div class="addons" id="addon-3">
+            <label for="check"></label>
+            <input id="add-ac" type="checkbox">
+            <h2>Customizable profile</h2>
+            <p>Custom theme on your profile</p>
+            <h3 id="steph33">+2/mo</h3>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="step4">
+        <h1>Finishing up</h1>
+        <p>Double-check everything looks OK before confirming.</p>
+        <div class="sumario">
+          <div class="box-sumario">
+            <h2></h2>
+            <h2></h2>
+            <p id="Change">Change</p>
+            <hr>
+            <h3></h3>
+            <h4></h4>
+            <h3></h3>
+            <h4></h4>
+            <h3></h3>
+            <h4></h4>
+            
+          </div>
+          <h2></h2>
+          <h2></h2>
+        </div>
+
+      </div>
+
+      <div class="step5">
+        <img src="assets/images/icon-thank-you.svg" alt="">
+        <h1>Thank you</h1>
+        <p>Thanks for confirming your subscription!We hope you have fun using our plataform. If you ever need support,please fell free to email us at support@loremgaming.com</p>
+      </div>
+      
+        <button id="Back" type="button">Go Back</button>
+        <button id="Next" class="NextCSS" type="submit">Next Step</button>
+        <!-- #region
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Samuel Borborema</a>.
+        </div>
+        #endregion -->
+    </section>
+
+    <div class="alert">
+      <img src="assets/images/icons8-close-50.png" id="x" alt="">
+      <img src="assets/images/icons8-exclamation-96.png" alt="">
+      <h1>Please register your information to proceed</h1>
+    </div>
+  </main>
+  
+</body>
+</html>
