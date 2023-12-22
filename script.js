@@ -25,7 +25,7 @@ let NomeUsuario = '';
 NextForm.addEventListener('click',()=>{
     if(Nome.value == ''||Email.value == '' || NumeroCadastro.value == ''){
         const s = document.querySelector('.alert').style.display = 'flex';
-        ContainerPai.classList.add('blurr');
+        ContainerPai.classList.  add('blurr');
         imgMain.classList.add('blurr');
     }
 
@@ -33,7 +33,10 @@ NextForm.addEventListener('click',()=>{
 });
 
 Form.addEventListener('submit',(e)=>{
+    h1Steps.item(Step-1).classList.toggle('active');
+    h1Steps.item(Step).classList.toggle('active');
     e.preventDefault();
+    Step++;
     CaseStep();
     NextForm.style.display = 'none';
     next.style.display = 'block';
@@ -203,7 +206,7 @@ function yearlyCheck(){
 function CaseStep(){
     switch (Step) {
         case 1:
-            next.classList.toggle('responsive');
+            NomeUsuario = '';  
             NextForm.style.display = 'block';
             step1.style.display = 'flex';
             step2.style.display ='none';

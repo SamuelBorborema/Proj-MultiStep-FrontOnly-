@@ -573,6 +573,10 @@ input:checked + label + .mo-y h2{
     letter-spacing: 1px;
 }
 
+.step5 img{
+    display: block;
+}
+
 .alert{
     width: 600px;
     height: 400px;
